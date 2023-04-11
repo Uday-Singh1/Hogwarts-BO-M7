@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/main.js" defer></script>
@@ -19,19 +21,23 @@
         <section class="main__container">
      
             <article class="main__container-1">
+              <button class="hg__logo__button" value="Reload page">
+                <img button class="hg__logo" src="/img/Logo_complete.png" alt="" >
+              </button>
+             
               <h2>Hogwarts Escape room</h2> 
+             
                 <article class="main__container-2">
              
                   <label for="username">Choose Your Name</label>
-                    <input name="username" placeholder="Username" type="text">
-                    <button class="start__button">START</button>
-                </article>
-               
+                    <input name="username"  placeholder="Username"  type="text" required id="myInput">
+                    <button class="start__button" id="myButton" disabled>
+                      <!-- <a href="http://127.0.0.1:5500/"--> 
+                        START</a> 
+                    </button>
+                </article>      
             </article>
-          
-
           </section> 
-  
     </main>
   </body>
 </html>
