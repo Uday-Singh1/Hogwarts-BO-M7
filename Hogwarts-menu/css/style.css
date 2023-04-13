@@ -1,169 +1,57 @@
-		body {
-			margin: 0px;
-			background: #000;
-		}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
-		.crcl {
-			width: 80px;
-			height: 80px;
-			border-radius: 100%;
-			position: relative;
-			background-image: url(
-"https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png"
-				);
-			background-size: cover;
-			animation: movement;
-		}
+body{
+	font-size: 62.5%;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
-		/* To set the positions for the logo
-		for the whole animation */
-		@keyframes movement {
-			0% {
-				left: 0px;
-				top: 0px
-			}
+.background{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50rem;
+	height: 50rem;
+	background: linear-gradient(to bottom right, );}
 
-			5% {
-				left: 300px;
-				top: 200px
-			}
-
-			10% {
-				left: 600px;
-				top: 100px
-			}
-
-			15% {
-				left: 600px;
-				top: 600px
-			}
-
-			20% {
-				left: 300px;
-				top: 600px
-			}
-
-			25% {
-				left: 600px;
-				top: 400px
-			}
-
-			30% {
-				left: 100px;
-				top: 0px
-			}
-
-			35% {
-				left: 600px;
-				top: 200px
-			}
-
-			40% {
-				left: 100px;
-				top: 500px
-			}
-
-			45% {
-				left: 0px;
-				top: 600px
-			}
-
-			50% {
-				left: 600px;
-				top: 600px
-			}
-
-			55% {
-				left: 300px;
-				top: 200px
-			}
-
-			60% {
-				left: 600px;
-				top: 100px
-			}
-
-			65% {
-				left: 800px;
-				top: 600px
-			}
-
-			70% {
-				left: 300px;
-				top: 600px
-			}
-
-			75% {
-				left: 600px;
-				top: 400px
-			}
-
-			80% {
-				left: 100px;
-				top: 0px
-			}
-
-			85% {
-				left: 600px;
-				top: 200px
-			}
-
-			90% {
-				left: 100px;
-				top: 500px
-			}
-
-			95% {
-				left: 0px;
-				top: 600px
-			}
-
-			100% {
-				left: 600px;
-				top: 200px;
-			}
-		}
-
-		.details {
-			float: right;
-			width: 400px;
-			height: 100vh;
-			position: relative;
-			background-color: rgb(6, 148, 25);
-			color: white;
-			display: block;
-			text-align: center;
-		}
-
-		.ground {
-			float: left;
-		}
-
-		.level {
-			display: flex;
-			margin: 10px;
-			margin-top: 25px;
-		}
-
-		.display_score {
-			margin-top: 25px;
-		}
-
-		button {
-			border-radius: 25px;
-			width: 8em;
-			height: 3em;
-			font-size: 20px;
-			border: 2px solid white;
-			background: transparent;
-			color: white;
-			margin: 10px;
-			cursor: pointer;
-		}
-
-		button:hover {
-			background-color: white;
-			color: rgb(6, 148, 25);
-			box-shadow: 0px 10px 20px 10px white;
-			transition-duration: 1s;
-		}
+.difficulty-menu {
+	width: 20rem;
+	background-color: #f2f2f2;
+	border: 0.1rem solid #ccc;
+	padding: 1rem;
+	text-align: center;
+  }
+  
+  .difficulty-menu h2 {
+	margin-top: 0;
+  }
+  
+  .difficulty-menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .difficulty-menu li {
+	margin: 0.5rem 0;
+  }
+  
+  .difficulty-menu a {
+	display: block;
+	padding: 0.5rem;
+	text-decoration: none;
+	color: #333;
+	border: 0.1rem solid #ccc;
+  }
+  
+  .difficulty-menu a:hover {
+	background-color: #ddd;
+  }
+  
