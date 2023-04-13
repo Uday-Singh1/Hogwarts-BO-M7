@@ -1,9 +1,19 @@
-
 @use './components/mixins';
+@use './abstracts/colors';
+
+
+a:link, a:visited {
+    color: #000000;
+    text-decoration: none;
+    }
+ 
+
 body {
     background: url('/img/hogwarts-3.webp') center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    @include mixins.fontPlayfair;
+
 }
 
 main{
@@ -25,41 +35,64 @@ img{
     width: 100%;
     z-index: 1;
     position: absolute;
-
-
 }
+
+
 
 
 .main__container-1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(70, 47, 121);
+    background-color:map-get(colors.$light-purp, "background");
     height: 70rem;
     width: 60rem;
     text-align: center;
     flex-direction: column;
     font-size: 4rem;
     padding-top: 3rem;
-   color: rgb(255, 255, 0);
-    
+   color: map-get(colors.$gold-color, "background");
+   border-radius: 20px;
+   transition: all 0.3s ease-in-out;
+   box-shadow: inset black 0.2rem;
+
 }
 
 
 .main__container-1:hover{
-    background-color:rgba(70, 47, 121, 0.8);
-    transition: 0.2s;
+    background-color: map-get(colors.$light-purp-hover, "background");
+    //background-color:rgba(70, 47, 121, 0.8);
+    transition: 0.3s;
+    transform: scale(1.1);
+    
 
+}
+
+.hg__logo__button{
+    background: none;
+    border: none;
+}
+.hg__logo{
+    display: flex;
+    height: 13rem;
+    width: 13rem;
+    transition: all 0.3s ease-in-out;
+}
+.hg__logo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 
 .main__container-2 {
-    background-color:#c3c3c3;
+    background-color: map-get(colors.$dark-purp, "background");
     height: 26rem;
     width: 46rem; 
     text-align: center;
     padding-top: 20px;
     font-size: 30px;
+    border-radius: 0.9rem;
+
 }
 input{
     display: flex;
@@ -70,6 +103,7 @@ input{
     margin: auto;
     margin-top: 4.8rem;
     
+    
 }
 input::placeholder{
     align-items: center;
@@ -77,7 +111,6 @@ input::placeholder{
     height: 5rem;
     width: 60%;
     font-size: 15px;
-    @include mixins.fontPlayfair;
 }
 
 label{
@@ -85,11 +118,23 @@ label{
 }
 
 h2{
-    padding-bottom: 13rem;
+    padding-bottom: 14rem;
     font-size: 5rem;
     justify-content: space-between;
     @include mixins.fontPlayfair;
+    background:linear-gradient(to right, rgba(255, 0, 0, 1), rgba(76, 106, 42), rgb(234, 218, 129),  rgba(0, 100, 200, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
 }
+
+
+
+h2:hover,
+h2:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
 
 .start__button {
     justify-content: center;
@@ -97,7 +142,7 @@ h2{
     margin-top: 20px;
     width: 20rem;
     height: 4rem;
-    background-color: gold ;
+    background-color: #F4C05D;
     transition: 0.3s;
     border: none;
     cursor: pointer;
@@ -106,12 +151,17 @@ h2{
     @include mixins.fontPlayfair;
     font-size: 2.5rem;
     opacity: 1;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
   }
   
   .start__button:hover {
-    background-color: gold;
+    background-color: #F4C05D;
     transition: 0.3s;
+    transform: scale(1.1);
   }
-  
 
-  
+.start__button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
