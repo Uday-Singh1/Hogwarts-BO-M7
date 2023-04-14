@@ -1,3 +1,25 @@
+class Header {
+    placeToRender;
+    headerElement;
+    h1Element;
+
+    constructor(placeToRender) {
+        this.placeToRender = placeToRender;
+
+        this.headerElement = document.createElement('header');
+        this.h1Element = document.createElement('h1');
+
+        this.h1Element.innerText = 'Kies je avatar';
+
+        this.render();
+    }
+
+    render = () => {
+        this.placeToRender.appendChild(this.headerElement);
+        this.headerElement.appendChild(this.h1Element);
+    }
+}
+
 class AvatarCirlce {
     placeToRender;
     liElement;
@@ -83,28 +105,6 @@ class Button {
 
     render = () => {
         this.placeToRender.appendChild(this.buttonElement);
-    }
-}
-
-class Header {
-    placeToRender;
-    headerElement;
-    h1Element;
-
-    constructor(placeToRender) {
-        this.placeToRender = placeToRender;
-
-        this.headerElement = document.createElement('header');
-        this.h1Element = document.createElement('h1');
-
-        this.h1Element.innerText = 'Kies je avatar';
-
-        this.render();
-    }
-
-    render = () => {
-        this.placeToRender.appendChild(this.headerElement);
-        this.headerElement.appendChild(this.h1Element);
     }
 }
 
