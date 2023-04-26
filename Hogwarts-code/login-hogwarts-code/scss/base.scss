@@ -1,4 +1,4 @@
-@use './components/mixins';
+@use './abstracts/mixins';
 @use './abstracts/colors';
 
 
@@ -24,76 +24,12 @@ main{
 
 img{
     width: 100%;
- 
-
-}
-.main__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    position: absolute;
 }
 
 
 
 
-.main__container-1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:map-get(colors.$light-purp, "background");
-    height: 70rem;
-    width: 60rem;
-    text-align: center;
-    flex-direction: column;
-    font-size: 4rem;
-    padding-top: 3rem;
-   color: map-get(colors.$gold-color, "background");
-   border-radius: 20px;
-   transition: all 0.3s ease-in-out;
-   box-shadow: inset black 0.2rem;
 
-}
-
-
-.main__container-1:hover{
-    background-color: map-get(colors.$light-purp-hover, "background");
-    //background-color:rgba(70, 47, 121, 0.8);
-    transition: 0.3s;
-    transform: scale(1.1);
-    
-
-}
-
-.hg__logo__button{
-    background: none;
-    border: none;
-}
-.hg__logo{
-    display: flex;
-    height: 13rem;
-    width: 13rem;
-    transition: all 0.3s ease-in-out;
-}
-.hg__logo:hover{
-    transform: scale(1.1);
-   
-}
-
-
-.main__container-2 {
-    background-color: map-get(colors.$dark-purp, "background");
-    height: 26rem;
-    width: 46rem; 
-    text-align: center;
-    padding-top: 20px;
-    font-size: 30px;
-    border-radius: 0.9rem;
-
-}
 input{
     display: flex;
     justify-content: center;
@@ -113,27 +49,7 @@ input::placeholder{
     font-size: 15px;
 }
 
-label{
-    @include mixins.fontPlayfair;
-}
 
-.main__name{
-    padding-bottom: 14rem;
-    font-size: 5rem;
-    justify-content: space-between;
-    @include mixins.fontPlayfair;
-    background:linear-gradient(to right, rgba(255, 0, 0, 1), rgba(76, 106, 42), rgb(234, 218, 129),  rgba(0, 100, 200, 1));
-    background-size: 100% 0.1em, 0 0.1em;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
-}
-
-
-
-.main__name:hover,
-.main__name:focus {
-  background-size: 0 0.1em, 100% 0.1em;
-}
 
 
 .start__button {

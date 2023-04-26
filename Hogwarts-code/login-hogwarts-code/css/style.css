@@ -43,6 +43,33 @@
     width: 200%;
   }
 }
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+}
+
+.hg__logo:hover {
+  transform: scale(1.2);
+}
+
+.main__name:hover,
+.main__name:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+.main__name {
+  transition: background-size 400ms;
+}
+
 a:link, a:visited {
   color: #000000;
   text-decoration: none;
@@ -62,6 +89,54 @@ main {
 
 img {
   width: 100%;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  width: 27rem;
+  align-items: center;
+  margin: auto;
+  margin-top: 4.8rem;
+}
+
+input::placeholder {
+  align-items: center;
+  margin-top: 7rem;
+  height: 5rem;
+  width: 60%;
+  font-size: 15px;
+}
+
+.start__button {
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 20rem;
+  height: 4rem;
+  background-color: #F4C05D;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  z-index: 1;
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.start__button:hover {
+  background-color: #F4C05D;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.start__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .main__container {
@@ -97,22 +172,6 @@ img {
   transform: scale(1.1);
 }
 
-.hg__logo__button {
-  background: none;
-  border: none;
-}
-
-.hg__logo {
-  display: flex;
-  height: 13rem;
-  width: 13rem;
-  transition: all 0.3s ease-in-out;
-}
-
-.hg__logo:hover {
-  transform: scale(1.1);
-}
-
 .main__container-2 {
   background-color: #462F79;
   height: 26rem;
@@ -123,22 +182,16 @@ img {
   border-radius: 0.9rem;
 }
 
-input {
-  display: flex;
-  justify-content: center;
-  height: 5rem;
-  width: 27rem;
-  align-items: center;
-  margin: auto;
-  margin-top: 4.8rem;
+.hg__logo__button {
+  background: none;
+  border: none;
 }
 
-input::placeholder {
-  align-items: center;
-  margin-top: 7rem;
-  height: 5rem;
-  width: 60%;
-  font-size: 15px;
+.hg__logo {
+  display: flex;
+  height: 13rem;
+  width: 13rem;
+  transition: all 0.3s ease-in-out;
 }
 
 label {
@@ -153,56 +206,6 @@ label {
   background: linear-gradient(to right, rgb(255, 0, 0), rgb(76, 106, 42), rgb(234, 218, 129), rgb(0, 100, 200));
   background-size: 100% 0.1em, 0 0.1em;
   background-repeat: no-repeat;
-  transition: background-size 400ms;
-}
-
-.main__name:hover,
-.main__name:focus {
-  background-size: 0 0.1em, 100% 0.1em;
-}
-
-.start__button {
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  width: 20rem;
-  height: 4rem;
-  background-color: #F4C05D;
-  transition: 0.3s;
-  border: none;
-  cursor: pointer;
-  border-radius: 0.8rem;
-  z-index: 1;
-  font-family: "Playfair Display", serif;
-  font-size: 2.5rem;
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-  text-decoration: none;
-}
-
-.start__button:hover {
-  background-color: #F4C05D;
-  transition: 0.3s;
-  transform: scale(1.1);
-}
-
-.start__button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-*, *::before, *::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
