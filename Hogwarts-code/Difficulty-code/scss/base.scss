@@ -1,0 +1,35 @@
+.difficulty-menu {
+	width: 20rem;
+	background-color: #f2f2f2;
+    background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpaperboat.com%2Fhogwarts-wallpapers&psig=AOvVaw2_BnAGkt5b-luRZ4Eb8aIo&ust=1682776468816000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLiuy4HdzP4CFQAAAAAdAAAAABAU");
+	border: 0.1rem solid #ccc;
+	padding: 1rem;
+	text-align: center;
+  }
+  
+  .difficulty-menu h2 {
+	margin-top: 0;
+  }
+  
+  .difficulty-menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .difficulty-menu li {
+	margin: 0.5rem 0;
+  }
+  
+  .difficulty-menu a {
+	display: block;
+	padding: 0.5rem;
+	text-decoration: none;
+	color: #333;
+	border: 0.1rem solid #ccc;
+  }
+  
+  .difficulty-menu a:hover {
+	background-color: #ddd;
+  }
+  

@@ -1,57 +1,54 @@
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-	font-size: 62.5%;
-	height: 100vh;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+html {
+  font-size: 62.5%;
 }
 
-.background{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 50rem;
-	height: 50rem;
-	background: linear-gradient(to bottom right, #604d8a, #cc8c47);}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .difficulty-menu {
-	width: 20rem;
-	background-color: #f2f2f2;
-	border: 0.1rem solid #ccc;
-	padding: 1rem;
-	text-align: center;
-  }
-  
-  .difficulty-menu h2 {
-	margin-top: 0;
-  }
-  
-  .difficulty-menu ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-  }
-  
-  .difficulty-menu li {
-	margin: 0.5rem 0;
-  }
-  
-  .difficulty-menu a {
-	display: block;
-	padding: 0.5rem;
-	text-decoration: none;
-	color: #333;
-	border: 0.1rem solid #ccc;
-  }
-  
-  .difficulty-menu a:hover {
-	background-color: #ddd;
-  }
-  
+  width: 20rem;
+  background-color: #f2f2f2;
+  background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpaperboat.com%2Fhogwarts-wallpapers&psig=AOvVaw2_BnAGkt5b-luRZ4Eb8aIo&ust=1682776468816000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLiuy4HdzP4CFQAAAAAdAAAAABAU");
+  border: 0.1rem solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+.difficulty-menu h2 {
+  margin-top: 0;
+}
+
+.difficulty-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.difficulty-menu li {
+  margin: 0.5rem 0;
+}
+
+.difficulty-menu a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #333;
+  border: 0.1rem solid #ccc;
+}
+
+.difficulty-menu a:hover {
+  background-color: #ddd;
+}
+
+/*# sourceMappingURL=style.css.map */
