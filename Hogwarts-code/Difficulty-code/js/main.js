@@ -1,19 +1,46 @@
-var easyButton = document.getElementById("easy");
-var mediumButton = document.getElementById("medium");
-var hardButton = document.getElementById("hard");
+class DifficultyMenu {
+  constructor() {
+    this.container = document.createElement('div');
+    this.container.classList.add('difficulty-menu');
+    document.body.appendChild(this.container);
 
-easyButton.addEventListener("click", function() {
-  startGame("easy");
-});
+    this.title = document.createElement('h2');
+    this.title.innerText = 'Kies een niveau:';
+    this.container.appendChild(this.title);
 
-mediumButton.addEventListener("click", function() {
-  startGame("medium");
-});
+    this.options = ['Easy [45 Minutes]', 'Medium [30 Minutes]', 'Hard [15 Minutes]', 'Free Play [Time less]'];
+    this.createOptions();
 
-hardButton.addEventListener("click", function() {
-  startGame("hard");
-});
+    this.currentOption = this.options[0];
+    this.addEventListeners();
+  }
 
-function startGame(difficulty) {
-  // start game with selected difficulty
+  createOptions() {
+    const optionsList = document.createElement('ul');
+    this.options.forEach((option) => {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href ='#';
+      a.id = option.toLowerCase();
+      a.innerText = option;
+      li.appendChild(a);
+      optionsList.appendChild(li);
+    });
+    this.container.appendChild(optionsList);
+  }
+
+  addEventListeners() {
+    const options = this.container.querySelectorAll('a');
+    options.forEach((option) => {
+      option.addEventListener('click', () => {
+        this.currentOption = option.innerText;
+        options.forEach((option) => {
+          option.classList.remove('active');
+        });
+        option.classList.add('active');
+      });
+    });
+  }
 }
+
+const menu = new DifficultyMenu();
