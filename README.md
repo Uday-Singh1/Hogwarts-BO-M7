@@ -12,6 +12,8 @@ Ashlay Steur
 
 Hoe werken de pagina's? :
 
+Voor de duidelijkheid van begin tot einde kan je een leuke muziek van hogwarts afspellen.
+
 1. je begint bij de login-form (login-hogwarts-code)
 2. je gaat daarna naar de difficulty pagina (Difficulty code)
 3. vervolgens ga je naar de avatar selector (avatar-select-code)
