@@ -1,0 +1,33 @@
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1.875rem;
+    background: linear-gradient(#604d8a, #f4c05d);
+    border-radius: 0.25rem;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.25rem;
+    margin-top: 49rem;
+    margin-left: 1rem;
+
+    &:after {
+        content: '▶️';
+        display: inline-block;
+        color: #604d8a;
+        font-family: 'FontAwesome';
+        padding: 0.5rem;
+        border-radius: 50%;
+        height: 1.25rem;
+        width: 1.25rem;
+        margin-left: 0.56250rem;
+        padding-left: 0.28125rem;
+        padding-right: 0.3125rem;
+    }
+
+    &.playing {
+        &:after {
+            padding: 0.4375rem;
+            content: '⏸️';
+        }
+    }
+}
