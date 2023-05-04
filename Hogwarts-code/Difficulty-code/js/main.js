@@ -44,3 +44,24 @@ class DifficultyMenu {
 }
 
 const menu = new DifficultyMenu();
+
+var easyButton = document.getElementById("easy");
+var mediumButton = document.getElementById("medium");
+var hardButton = document.getElementById("hard");
+
+easyButton.getElementById("click", function() {
+  startGame("easy");
+});
+
+mediumButton.getElementById("click", function() {
+  startGame("medium");
+});
+
+hardButton.getElementById("click", function() {
+  startGame("hard");
+});
+
+function startGame(difficulty) {
+  // start game with selected difficulty
+}
+
