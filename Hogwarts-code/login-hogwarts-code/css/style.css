@@ -11,7 +11,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #462F79;
     max-height: 70rem;
     max-width: 60rem;
     text-align: center;
@@ -112,7 +111,8 @@ input::placeholder {
 .start__button {
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 2rem;
+  margin-right: 1rem;
   width: 20rem;
   height: 4rem;
   background-color: #F4C05D;

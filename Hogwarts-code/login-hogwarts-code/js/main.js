@@ -98,7 +98,6 @@ class InputControler {
   initialize() {
     this.myInput = document.getElementById('myInput');
     this.myButton = document.getElementById('myButton');
-    console.log(this.myInput);
     this.myInput.onchange = this.handleInputChange;
     this.myButton.addEventListener('click', this.handleButtonClick.bind(this));
     this.handleInputChange(); // Call handleInputChange initially
@@ -126,7 +125,6 @@ class InputControler {
 
 const hogwartsEscapeRoom = new InputControler();
 
-console.log("ik werk niet");
 
 class App{
   

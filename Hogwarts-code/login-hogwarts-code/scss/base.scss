@@ -3,7 +3,7 @@
 
 
 a:link, a:visited {
-    color: #000000;
+   color: map-get(colors.$black, "color");
     text-decoration: none;
     }
  
@@ -25,9 +25,6 @@ main{
 img{
     width: 100%;
 }
-
-
-
 
 
 input{
@@ -55,10 +52,11 @@ input::placeholder{
 .start__button {
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 2rem;
+    margin-right: 1rem;
     width: 20rem;
     height: 4rem;
-    background-color: #F4C05D;
+    background-color: map-get(colors.$gold-color, "background");
     transition: 0.3s;
     border: none;
     cursor: pointer;
@@ -72,7 +70,7 @@ input::placeholder{
   }
   
   .start__button:hover {
-    background-color: #F4C05D;
+    background-color: map-get(colors.$gold-color, "background");
     transition: 0.3s;
     transform: scale(1.1);
   }
