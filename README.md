@@ -13,7 +13,7 @@ Onderdelen:
 1. Uday Singh : Login-form, music button
 2. Halil Dogan : Difficulty menu, music button
 3. Ashlay Steur : Progession bar, house sorter avatar-backend (js functions)
-4. Leandro : Avatar Menu (Responsiveness fixes)
+4. Leandro : Avatar Menu, question page (Responsiveness fixes)
 
 Hoe werken de pagina's? :
 
