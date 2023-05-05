@@ -10,10 +10,10 @@ Halil Dogan,
 Ashlay Steur
 
 Onderdelen:
-Uday Singh : Login-form, music button
-Halil Dogan : Difficulty menu, music button
-Ashlay Steur : Progession bar, house sorter (js functions)
-Leandro : Avatar Menu (Responsiveness fixes)
+1. Uday Singh : Login-form, music button
+2. Halil Dogan : Difficulty menu, music button
+3. Ashlay Steur : Progession bar, house sorter (js functions)
+4. Leandro : Avatar Menu (Responsiveness fixes)
 
 Hoe werken de pagina's? :
 
