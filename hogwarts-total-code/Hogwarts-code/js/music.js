@@ -84,7 +84,7 @@ class VolumeControl {
   }
   
   // Usage example:
-  const volumeControl = new VolumeControl("/music/");
+  const volumeControl = new VolumeControl("/music/hogwarts-music.mp3");
   document.body.appendChild(volumeControl.container);
   
   // Set

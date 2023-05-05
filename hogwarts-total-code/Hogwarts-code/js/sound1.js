@@ -22,4 +22,4 @@ class AudioPlayer {
     }
 }
 
-const player = new AudioPlayer("Harry.mp3");
+const player = new AudioPlayer("hogwarts-music.mp3");

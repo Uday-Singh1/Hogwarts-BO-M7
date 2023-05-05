@@ -178,7 +178,7 @@ class Button {
       this.generateAvatars(this.randomNumber.array);
   
       const button = new Button(this.placeToRender);
-      button.addClickEventListener('percentage.html');
+      button.addClickEventListener('quests.html');
     }
   
     generateAvatars = (numArray) => {

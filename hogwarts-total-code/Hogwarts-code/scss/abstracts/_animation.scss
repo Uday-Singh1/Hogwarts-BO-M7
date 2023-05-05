@@ -1,3 +1,5 @@
+@use "./colors";
+@use "./mixins";
 
 
 
@@ -17,3 +19,81 @@
     transition: background-size 400ms;
 
 }
+
+
+
+
+
+
+// question dropdown
+
+
+
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    color: map-get(colors.$light-blue, "color");
+    transform: scale(1.05);
+  }
+
+
+  .dropdown-content a:hover {
+    color: map-get(colors.$dark-gold, "color");
+    transform: scale(1.02);
+  }
+
+  .dropdown-content a:nth-of-type(3) {
+    border-bottom: none;
+  }
+  
+
+
+    /* Toon het dropdown-menu met een fade-in animatie */
+    .dropdown-content.show {
+        animation: fadeIn 0.5s ease forwards;
+      }
+      
+      /* Definieer de fadeIn animatie */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+
+
+
+
+      //Uday vOLUME 
+
+
+
+      .volume-button {
+        &:hover {
+            transform: scale(1.2);
+            transition: transform 0.2s ease;
+        }
+    }
+    
+    .volume-slider {
+        -webkit-appearance: none;
+        width: 0;
+        transition: width 0.2s ease;
+    
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            cursor: pointer;
+            transition: margin-top 0.2s ease;
+            margin-top: -0.205rem;
+        }
+    
+        &.active {
+            width: 6.25rem;
+        }
+    }
+    
+    .volume-slider:not(.active)::-webkit-slider-thumb {
+        width: 0;
+    }
