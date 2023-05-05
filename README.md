@@ -17,6 +17,8 @@ Onderdelen:
 
 Hoe werken de pagina's? :
 
+**Het gehele project staat onder de naam (hogwarts-total-code)**
+
 1. je begint bij de login-form (login-hogwarts-code)
 2. je gaat daarna naar de difficulty pagina (Difficulty code)
 3. vervolgens ga je naar de avatar selector (avatar-select-code)
