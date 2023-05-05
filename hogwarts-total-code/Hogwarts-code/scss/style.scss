@@ -1,4 +1,4 @@
-@use "../scss/abstracts/mediaqueries";
+@use "./abstracts/mediaqueries";
 @use "../scss/abstracts/animation";
 @use "../scss/abstracts/colors";
 @use "../scss/abstracts/mixins";
@@ -15,4 +15,5 @@
 @use "./components/heading/heading.scss";
 @use "./components/main/main.scss";
 @use "./components/slider.scss";
-@use "base.scss"
+@use "../scss/base.scss";
+@use "../scss/components/Overlay/overlay.scss";

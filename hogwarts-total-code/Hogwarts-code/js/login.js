@@ -32,7 +32,7 @@ class Article{
     this.h2.innerText = "Hogwarts Escape room";
 
     //this.button.textContent = "Reload page";
-    this.image.src = "/img/Logo_complete.png";
+    this.image.src = "./img/Logo_complete.png";
     this.image.alt = "Hogwarts logo";
     this.render();
   }

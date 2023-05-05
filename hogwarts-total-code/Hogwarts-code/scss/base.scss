@@ -1,6 +1,6 @@
 @use './abstracts/mixins';
 @use './abstracts/colors';
-
+@use "./abstracts/mediaqueries";
 
 a:link, a:visited {
     color: #000000;
@@ -9,7 +9,7 @@ a:link, a:visited {
  
 
 body {
-    background: url('/img/hogwarts-3.webp') center center fixed;
+    background: url('../img/hogwarts-3-copy.webp') center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
     @include mixins.fontPlayfair;
@@ -84,44 +84,49 @@ input::placeholder{
 
 
 .difficulty-menu {
-	width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 30rem;
   height: 40rem;
-	background-color: #f2f2f2;
-    background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpaperboat.com%2Fhogwarts-wallpapers&psig=AOvVaw2_BnAGkt5b-luRZ4Eb8aIo&ust=1682776468816000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLiuy4HdzP4CFQAAAAAdAAAAABAU");
-	border: 1rem solid #604d8a;
-	padding: 1rem;
-	text-align: center;
-  margin-left: 70rem;
+  background-color: #f2f2f2;
+  background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpaperboat.com%2Fhogwarts-wallpapers&psig=AOvVaw2_BnAGkt5b-luRZ4Eb8aIo&ust=1682776468816000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLiuy4HdzP4CFQAAAAAdAAAAABAU");
+  border: 1rem solid #604d8a;
+  padding: 1rem;
+  text-align: center;
   background: #f4c05d;
-  margin-top: 30rem;
-  }
-  
-  .difficulty-menu h2 {
-	margin-top: 0;
-  }
-  
-  .difficulty-menu ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-  }
-  
-  .difficulty-menu li {
-	margin: 0.5rem 0;
-  }
-  
-  .difficulty-menu a {
-	display: block;
-	padding: 0.5rem;
-	text-decoration: none;
-	color: #604d8a;
-	border: 1.5rem solid #604d8a;
-  }
-  
-  .difficulty-menu a:hover {
-	background-color: #ddd;
-  }
-  
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.difficulty-menu h2 {
+  margin-top: 0;
+}
+
+.difficulty-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.difficulty-menu li {
+  margin: 0.5rem 0;
+}
+
+.difficulty-menu a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #604d8a;
+  border: 1.5rem solid #604d8a;
+}
+
+.difficulty-menu a:hover {
+  background-color: #ddd;
+}
+
 
   .btn {
     cursor: pointer;
