@@ -8,7 +8,7 @@ class DifficultyMenu {
     this.title.innerText = 'Kies een niveau:';
     this.container.appendChild(this.title);
 
-    this.options = ['Easy [45 Minutes]', 'Medium [30 Minutes]', 'Hard [15 Minutes]', 'Free Play [Timeless]'];
+    this.options = ['Easy [45 Minutes]', 'Medium [30 Minutes]', 'Hard [15 Minutes]', 'Free Play [Time less]'];
     this.createOptions();
 
     this.currentOption = this.options[0];

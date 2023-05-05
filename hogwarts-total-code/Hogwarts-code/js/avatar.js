@@ -74,7 +74,6 @@ class AvatarCirlce {
         this.imgElement.classList = 'avatar-frame';
 
         this.render();
-        this.addListeners();
     }
 
     render = () => {
@@ -82,22 +81,7 @@ class AvatarCirlce {
         this.liElement.appendChild(this.buttonElement);
         this.buttonElement.appendChild(this.imgElement);
     }
-
-    addListeners = () => {
-        this.buttonElement.addEventListener('click', () => {
-            const proceedButton = document.querySelector('.Proceed__Button');
-            proceedButton.disabled = false;
-      
-        });
-    }
-
-    handleNavigation = (link) => {
-        // add your navigation logic here
-      
-        console.log(`Navigating to: ${link}`);
-    }
 }
-
 
 class Avatars {
     placeToRender;
@@ -129,66 +113,52 @@ class Avatars {
 class Button {
     placeToRender;
     buttonElement;
-  
+
     constructor(placeToRender) {
-      this.placeToRender = placeToRender;
-  
-      this.buttonElement = document.createElement('button');
-      this.buttonWrapper = document.createElement('div');
-  
-      this.buttonElement.classList = 'Proceed__Button';
-      this.buttonElement.textContent = 'Proceed';
-      this.buttonElement.disabled = true;
-  
-      this.buttonWrapper.classList = 'button__Wrapper';
-  
-      this.render();
+        this.placeToRender = placeToRender;
+
+        this.buttonElement = document.createElement('button');
+        this.buttonWrapper = document.createElement('div');
+
+        this.buttonElement.classList = 'Proceed__Button';
+        this.buttonElement.textContent = 'Proceed';
+
+        this.buttonWrapper.classList = 'button__Wrapper';
+
+        this.render();
     }
-  
+
     render = () => {
-      this.placeToRender.appendChild(this.buttonWrapper);
-      this.buttonWrapper.appendChild(this.buttonElement);
-    };
-  
-    addClickEventListener = (linkUrl) => {
-      this.buttonElement.addEventListener('click', () => {
-        window.location.href = linkUrl;
-      });
-    };
-  }
-  
-  
+        this.placeToRender.appendChild(this.buttonWrapper);
+        this.buttonWrapper.appendChild(this.buttonElement);
+    }
+}
 
-
-
-  class App {
+class App {
     placeToRender;
     header;
     avatars;
     avatarCard;
-    randomNumber;
-  
+    RandomNumber;
+
     constructor(placeToRender) {
-      this.placeToRender = document.getElementsByTagName(placeToRender)[0];
-  
-      this.header = new Header(this.placeToRender);
-      this.avatars = new Avatars(this.placeToRender);
-      this.randomNumber = new RandomNumber([1, 2, 3, 4, 5, 6]);
-  
-      this.generateAvatars(this.randomNumber.array);
-  
-      const button = new Button(this.placeToRender);
-      button.addClickEventListener('percentage.html');
+        this.placeToRender = document.getElementsByTagName(placeToRender)[0];
+
+        this.header = new Header(this.placeToRender);
+        this.avatars = new Avatars(this.placeToRender);
+        this.button = new Button(this.placeToRender);
+        this.RandomNumber = new RandomNumber([1, 2, 3, 4, 5, 6]);
+
+        this.generateAvatars(this.RandomNumber.array);
     }
-  
+
     generateAvatars = (numArray) => {
-      for (let i = 1; i < 8; i++) {
-        if (i != 7) {
-          this.avatarCard = new AvatarCirlce(this.avatars.listElement, i, numArray[i - 1]);
-        } else this.avatarCard = new AvatarCirlce(this.avatars.randomListElement, i);
-      }
-    };
-  }
-  
-  const app = new App('body');
-  
+        for (let i = 1; i < 8; i++) {
+            if (i != 7) {
+                this.avatarCard = new AvatarCirlce(this.avatars.listElement, i, numArray[i - 1]);
+            } else this.avatarCard = new AvatarCirlce(this.avatars.randomListElement, i);
+        }
+    }
+}
+
+const app = new App('body');
