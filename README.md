@@ -9,6 +9,11 @@ Leandro Bruijnaers,
 Halil Dogan,
 Ashlay Steur
 
+Onderdelen:
+Uday Singh : Login-form, music button
+Halil Dogan : Difficulty menu, music button
+Ashlay Steur : Progession bar, house sorter (js functions)
+Leandro : Avatar Menu (Responsiveness fixes)
 
 Hoe werken de pagina's? :
 
