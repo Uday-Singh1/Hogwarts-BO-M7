@@ -28,9 +28,10 @@ Hoe werken de pagina's? :
 Als een Toevoeging kan je op bijna elke pagina de soundtrack van hogwarts horen,
 er staat een volume/mute knop bij als je het uit wilt zetten 
 
+**Design staat in de Hogwarts-art file**
 
 De Repo bestaat uit twee branches, de main & backup, het spreekt voorzich, dat we dus op 2 verschillende plekken pushen, de backup wordt alleen gebruikt bij grote veranderingen of onzekerheden
 
 **screencasts zitten in de documentatie folder in de recording.txt bestanden en of los in de folder zelf** 
-&nbsp
-**Design staat in de Hogwarts-art file**
+
+
